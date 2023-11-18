@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    background-color: red;
+    background-image: url(./everest-4828404_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.sun{
+    position: relative;
+    animation: sun;
+    animation-duration: 8s;
+    animation-duration: alternate;
+    animation-timing-function: 
+    linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.cloud__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.cloud1{
+    position: relative;
+    animation: cloud1;
+    animation-duration: 8s;
+    animation-duration: alternate;
+    animation-timing-function: 
+    ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+}
+.cloud2{
+    position: relative;
+    animation: cloud2;
+    animation-duration: 6s;
+    animation-duration: alternate;
+    animation-timing-function: 
+    linear;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+}
+
+
+
+@keyframes sun{
+    0%{ top: 0px;
+    left: 300px;
+/* display: none; */
+}
+25%{top: 50px;
+left: 300px;}
+50%{top: 100px;
+    left: 300px;
+
+}
+75%{top: 150px;
+    left: 300px;
+
+}
+100%{top: 200px;
+    left: 300px;
+}
+}
+
+@keyframes cloud1{
+    0%{ top: 100px;
+    left: 0px;
+/* display: none; */
+}
+25%{top: 100px;
+left: 100px;}
+50%{top: 100px;
+    left: 200px;
+
+}
+75%{top: 100px;
+    left: 300px;
+
+}
+100%{top: 100px;
+    left: 400px;
+}
+}
+@keyframes cloud2{
+    0%{ top: 0px;
+    right: 0px;
+/* display: none; */
+}
+25%{top: 0px;
+right: 100px;}
+50%{top: 0px;
+    right: 200px;
+
+}
+75%{top: 0px;
+    right: 300px;
+
+}
+100%{top: 0px;
+    right: 400px;
+}
+}
+

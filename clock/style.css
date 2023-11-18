@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.list{
+    margin: 0 auto;
+    width: 500px;
+    height:500px;
+    border-radius: 50%;
+    border: 20px solid aqua;
+    list-style: none;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+.nuqta{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.strelka{
+    position: absolute;
+    width: 20px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: black;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    left: calc(50% -50%);
+    animation: strelka;
+    animation-duration: 60s;
+    animation-direction: normal;
+}
+@keyframes strelka {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
